@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="miestilo.css">
+
+    <title>TIENDA Gamers</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <a class="navbar-brand" href="imagenes/logo.png">Gamers</a>
+                    <img src="imagenes/logo.png" height="100" width="100">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="quienessomos.html">Quienes somos</a>
+                        </li> 
+                      <li class="nav-item">
+                          <a class="nav-link" href="valores.html">Valores</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="giro.html">Giro</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="vision.html">Vision</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="mision.html">Mision</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#ubicacion">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="slider.html">Ofertas</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="imagenes/carrito.png" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+<br>
+<br>
+<br>
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Productos de Gamers</h1>
+            <p class="lead">Puedes seleccionar cualquuiera de nuestros productos</p>
+        </div>
+
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Nintendo switch </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/nintendo.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">5,000</span></h1>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Xbox one </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/xboxone.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">6,500</span></h1>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">PS4</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/ps4.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">7,000</span></h1>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card-deck mb-3 text-center">
+
+                    
+                 <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Control PS4 </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/controlps4.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">1,700</span></h1>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                 <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Control Xbox One </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src= "C:\Users\cack0\OneDrive\Documentos\Cetis138\DAES\Proyecto tienda\imagenes\controlxboxone.jpg"class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">1,500</span></h1>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold"> Control PS5 </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/controlps5.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">2,500</span></h1>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Pes 21</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/pes21.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">790</span></h1>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">PS5</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/ps5.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">11,999</span></h1>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Xbox series X</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/xboxx.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">10,999</span></h1>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Agregar al carrito</a>
+                    </div>
+          
+
+                 <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold"> Control Xbox Series </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/controlxboxs.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">2,000</span></h1>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="10">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+
+        </div>
+    </main>
+    <br><br><br>
+    <div id="ubicacion">
+    <center>
+        <h1 class="display-4 mt-4">Sucursal</h1>
+            <p class="lead">Nos encontramos en la ubicacion señalada en google maps (click para ir)</p>
+        <a href="https://www.google.com.mx/maps/place/Gamers+%5BPlaza+Galer%C3%ADas%5D/@16.7535321,-93.1514303,17z/data=!3m1!4b1!4m5!3m4!1s0x85ecd90ef7b0cec9:0x4d1b33f853b34674!8m2!3d16.7535321!4d-93.1492416"><img src="./imagenes/maps.png" width= "700" heigth= "700"alt="Imagen de google maps"></a>
+    </center>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+
+</body>
+
+</html>
